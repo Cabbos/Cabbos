@@ -1,46 +1,90 @@
-# 张博 | AI Agent 开发工程师
+# Cabbos
 
-5 年工程经验，具备前端架构、业务抽象、工程化与 AI 应用落地的复合背景。近期重点投入 Agent Runtime、Tool Calling、Workflow Automation、Trace / Eval 等方向，持续围绕真实代码仓、复杂任务系统与内容生成工作流打磨可执行、可观测、可扩展的智能体系统。
+Building local-first AI agent runtimes, coding workbenches, and workflow automation systems.
 
-## 当前方向
+I focus on turning LLMs from isolated API calls into systems that are executable, observable, recoverable, and useful in real work:
 
-- AI Agent 开发工程师
-- LLM 应用工程化
-- 智能工作流与自动化系统
-- Agent Runtime / Tooling
+- Agent runtime, tool calling, permissions, and checkpoints
+- Local coding agents and desktop AI workbenches
+- Context management, memory, trace, eval, and recovery
+- Business workflow automation with operator-facing UIs
 
-## 代表项目
+## Current Focus
 
-### 1. code-cli
+### Forge - Local AI Coding Workbench
 
-本地代码 Agent CLI，围绕真实代码仓场景实现 agent loop、tool calling、session 持久化、trace / replay、offline eval 等核心能力。
+Forge is a local-first desktop AI coding workbench built with Tauri, React, TypeScript, and Rust.
 
-- Repo: [code-cli](https://github.com/Cabbos/code-cli)
+It explores the product and runtime layer around AI agents:
 
-### 2. cabbos_pycode
+- Multi-provider agent execution
+- Filesystem, shell, search, and diff tools
+- Permission gates and checkpoint safety
+- Session resume and automatic context compaction
+- Project-level Wiki Memory
+- Skills, hooks, and sub-agent workflows
 
-Python 版本 Agent CLI / coding workflow 实验项目，用于验证多语言下的 agent 工程实现与自动化执行链路。
+This is my main direction now: building the workbench and runtime that make agents safer, more visible, and easier to use on real projects.
 
-- Repo: [cabbos_pycode](https://github.com/Cabbos/cabbos_pycode)
+## Open-Source Agent Infrastructure
 
-### 3. TikTok Shop Automation
+### [code-cli](https://github.com/Cabbos/code-cli)
 
-围绕“爆款带货视频分析 -> 模式抽象 -> 素材匹配 -> 自动剪辑”设计多 Agent 工作流系统，采用 LangGraph、FastAPI、React Studio 与 Pattern DB。
+A TypeScript coding agent CLI inspired by modern AI coding tools.
 
-- 私有项目，可在沟通中补充系统设计与架构细节
+Focus areas:
 
-## 过往经验
+- Agent loop and tool calling
+- Workspace sandbox
+- Skill runtime
+- Session persistence
+- Trace / replay
+- Offline evals
 
-- 企业级中台系统
-- 智能分析系统与 BFF 编排层
-- 低代码 / Schema 驱动系统
-- 构建链路升级与工程提效
+### [cabbos_pycode](https://github.com/Cabbos/cabbos_pycode)
 
-## 技术关键词
+A Python version of a coding agent runtime, used to validate agent architecture across ecosystems.
 
-`TypeScript` `Python` `React` `Node.js` `LangGraph` `FastAPI` `Tool Calling` `Workflow Automation` `Trace` `Eval` `BFF` `Schema`
+Focus areas:
 
-## 联系方式
+- Pluggable tools
+- Workspace safety
+- JSONL tracing
+- Offline tool-call evaluation
+
+## Applied Agent Systems
+
+### TikTok Shop Automation
+
+A multi-agent workflow for short-video commerce:
+
+`video analysis -> pattern mining -> creative generation -> asset matching -> render planning`
+
+Built around LangGraph, FastAPI, React Studio, and a local Pattern DB. The project is private, but I can share architecture details in conversation.
+
+### [Hot2Pub](https://github.com/Cabbos/hot_to_public)
+
+An AI content workflow for trend discovery, article generation, and publishing preparation.
+
+Built with FastAPI, Next.js, SQLite, crawler workers, and multi-step agent flows.
+
+### [Campaign Workspace](https://github.com/Cabbos/campaign-workspace)
+
+An offline-first operations planning workspace that turns campaign briefs into structured plans and Excel reports.
+
+It packages AI-assisted planning into a repeatable local workflow for operators.
+
+## Background
+
+Before focusing on AI agents, I worked on enterprise frontend systems, low-code platforms, schema-driven rendering, BFF orchestration, data analysis tools, and build engineering.
+
+That background shapes how I build agent products: not as demos, but as systems with clear interfaces, visible state, recovery paths, and real user workflows.
+
+## Keywords
+
+`AI Agent` `Agent Runtime` `Tool Calling` `Coding Agent` `Tauri` `React` `TypeScript` `Rust` `Python` `FastAPI` `LangGraph` `Trace` `Eval` `Workflow Automation` `Schema` `BFF`
+
+## Contact
 
 - GitHub: [Cabbos](https://github.com/Cabbos)
 - Email: cabbos@163.com
